@@ -17,7 +17,7 @@
         $result = $link->query($sql_query);
         while($row = $result->fetch_array()){
             // print out fields from row of data
-            echo "<p>".$row ['uid']. " - ". $row ['username']." - ".$row ['email_address']."</p>";
+            echo "<p>""UserID".$row ['uid']. " - Name". $row ['username']." - Email ".$row ['email_address']."</p>";
         }
         $result->close();
         $link->close();
