@@ -53,27 +53,12 @@ article {
         ?>
         <nav>
   <ul>
-    <li><a href="login.php">Login here</a>&nbsp; If you're already a registered student</li><br>
-    <li><a href="home.php">Else Register here</a></li><br>
+    <li><a href="login.php">Login here</a></li><br>
+    <li><a href="home.php">Home</a></li><br>
     <li><a href="#">Forgot my username/password</a></li>
   </ul>
 </nav>
-     
-
-    <div class="loginBox">
-        <h3>Login Form</h3>
-        <br><br>
-        <form method="post" action="login.php">
-            <label>Username:</label><br>
-            <input type="text" name="username" placeholder="username" /><br><br>
-            <label>Password:</label><br>
-            <input type="password" name="password" placeholder="password" />  <br><br>
-            <input type="submit" name="submit" value = "login"/>
-        </form>
-        <div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?></div>
-
-    </div>
-
+    
 </main>
 <footer>Copyright Fredrick Muchila @RGU 2017</footer>
 </body>
