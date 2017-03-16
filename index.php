@@ -3,22 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Student Black Board</title>
+       <style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: blue;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+</style>
 </head>
+    
 <body>
 <header>
-    <h1>Welcome to Student Black Board</h1>
+   <h1>Welcome to Student Black Board</h1>
 </header>
 <main>
-    <section>
-        <h2>Connect to  database</h2>
+ 
         <?
         include 'dbConnect.php';
         ?>
-        <p><a href="all.php">All Marvel Movies</a></p>
-        <p><a href="xmen.php">All X-MEN Movies</a></p>
-        <p><a href="dbConnect.php">dbC30Aonnect</a></p>
-
-    </section>
+        <nav>
+  <ul>
+    <li><a href="login.php">select if you're registered student</a></li>
+    <li><a href="home.php">Else Register here</a></li>
+    <li><a href="#">Forgot my username/password</a></li>
+  </ul>
+</nav>
+     
 
     <div class="loginBox">
         <h3>Login Form</h3>
@@ -34,12 +74,7 @@
 
     </div>
 
-
-
-
-
 </main>
-<footer>
-</footer>
+<footer>Copyright Fredrick Muchila @RGU 2017</footer>
 </body>
 </html>
