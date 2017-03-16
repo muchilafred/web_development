@@ -44,7 +44,7 @@ article {
     
 <body>
 <header>
-   <h1>Welcome to Student Black Board</h1>
+   <h1>Welcome on Student Black-Board</h1>
 </header>
 <main>
  
@@ -53,7 +53,7 @@ article {
         ?>
         <nav>
   <ul>
-    <li><a href="login.php">select if you're registered student</a></li>
+    <li>select if you're registered student<a href="login.php">Login here</a></li>
     <li><a href="home.php">Else Register here</a></li>
     <li><a href="#">Forgot my username/password</a></li>
   </ul>
