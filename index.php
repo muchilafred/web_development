@@ -54,7 +54,7 @@ article {
         <nav>
   <ul>
     <li><a href="login.php">Login here</a></li><br>
-    <li><a href="home.php">Home</a></li><br>
+    <li><a href="users.php">Users</a></li><br>
     <li><a href="home.php">Register</a></li><br>
     <li><a href="#">Suggestions box</a></li><br>
     <li><a href="#">Contact Us</a></li>
