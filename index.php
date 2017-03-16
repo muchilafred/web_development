@@ -2,21 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Marvel Movies</title>
+    <title>Student Black Board</title>
 </head>
 <body>
 <header>
-    <h1>Marvel Movies</h1>
+    <h1>Welcome to Student Black Board</h1>
 </header>
 <main>
     <section>
         <h2>Connect to  database</h2>
         <?
         include 'dbConnect.php';
-        print " dbhost - ".$connectstr_dbhost."<br>";
-        print " dbname- ".$connectstr_dbname."<br>";
-        print " dbusername- ".$connectstr_dbusername."<br>";
-        print " dbpassword- ".$connectstr_dbpassword."<br>";
         ?>
         <p><a href="all.php">All Marvel Movies</a></p>
         <p><a href="xmen.php">All X-MEN Movies</a></p>
