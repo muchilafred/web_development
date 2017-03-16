@@ -54,7 +54,7 @@ article {
         <nav>
   <ul>
     <li><a href="login.php">Login here</a>&nbsp; If you're already a registered student</li><br>
-    <li><a href="home.php">Else Register here</a></li>
+    <li><a href="home.php">Else Register here</a></li><br>
     <li><a href="#">Forgot my username/password</a></li>
   </ul>
 </nav>
