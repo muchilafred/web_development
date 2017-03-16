@@ -53,7 +53,7 @@ article {
         ?>
         <nav>
   <ul>
-    <li>select if you're registered student<a href="login.php">Login here</a></li>
+    <li><a href="login.php">Login here</a>&nbsp; If you're already a registered student</li><br>
     <li><a href="home.php">Else Register here</a></li>
     <li><a href="#">Forgot my username/password</a></li>
   </ul>
