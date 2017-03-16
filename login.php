@@ -7,7 +7,10 @@
 </head>
 
 <body>
-<h1>PHP Login Form with Session</h1>
+<h1>Welcome to the our Login page</h1><br>
+<h2>Please fill-in the form with your correct details and information, when you have sucessfuly completed the form you will now be
+    able to login and view and share information with other students</h2>
+    
 <div class="loginBox">
 
     <?php
