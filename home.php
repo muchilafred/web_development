@@ -6,6 +6,17 @@
 </head>
 
 <body>
-<h1>Hello</h1>
+<?php
+include("db_connect.php");
+$sql_query = "SELECT * FROM users";
+$result = $link->query($sql_query);
+while($row = $result->fetch_array())
+{
+    $username = $row['username'];
+    $password = $row['password'];
+    $email_address = $email_address ['email_address'];
+    echo "Youre user name:"[$username];
+}
+?>
 </body>
 </html>
