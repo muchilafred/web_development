@@ -1,23 +1,12 @@
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Welcome</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
-</head>
-
-<body>
-    <h1>please register</h1>
 <?php
+
 include("db_connect.php");
-$sql_query = "SELECT * FROM users";
-$result = $link->query($sql_query);
-while($row = $result->fetch_array())
-{
-    $username = $row['username'];
-    $password = $row['password'];
-    $email_address = $email_address ['email_address'];
-    echo "Youre user name:"[$username];
+$username = $_POST["username"];
+$password = $_POST["password"];
+$email_address = $_POST["email_address"];
+$sql_query = "INSERT INTO users (username, password, email_address) VALUES ('$username', '$password', '$email_address')";
+if (mysqli_query($link, $sql_query)){
+} else {
+    echo "ERROR: ". $sql_query. "<br>" . mysqli_error($link);
 }
-?>
-</body>
-</html>
+header("location:index.php");
