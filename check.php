@@ -23,7 +23,7 @@ if(empty($_POST["username"]) || empty($_POST["password"]))
 
 
 
-                $sql = "SELECT * FROM users WHERE uid='10'";
+                $sql = "SELECT * FROM users";
 
 
 
