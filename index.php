@@ -1,49 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Marvel Movies</title>
-</head>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Student Black Board</title>
+        <style>
+            div.container {
+                width: 100%;
+                border: 1px solid gray;
+            }
+            header, footer {
+                padding: 1em;
+                color: white;
+                background-color: blue;
+                clear: left;
+                text-align: center;
+            }
+            nav {
+                float: left;
+                max-width: 160px;
+                margin: 0;
+                padding: 1em;
+            }
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            nav ul a {
+                text-decoration: none;
+            }
+            article {
+                margin-left: 170px;
+                border-left: 1px solid gray;
+                padding: 1em;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+
 <body>
 <header>
-    <h1>Marvel Movies</h1>
+    <h1>Welcome on Student Black-Board</h1>
 </header>
 <main>
-    <section>
-        <h2>Connect to  database</h2>
-        <?
-        include 'dbConnect.php';
-        print " dbhost - ".$connectstr_dbhost."<br>";
-        print " dbname- ".$connectstr_dbname."<br>";
-        print " dbusername- ".$connectstr_dbusername."<br>";
-        print " dbpassword- ".$connectstr_dbpassword."<br>";
-        ?>
-        <p><a href="all.php">All Marvel Movies</a></p>
-        <p><a href="xmen.php">All X-MEN Movies</a></p>
-    
 
-    </section>
-
-    <div class="loginBox">
-        <h3>Login Form</h3>
-        <br><br>
-        <form method="post" action="login.php">
-            <label>Username:</label><br>
-            <input type="text" name="username" placeholder="username" /><br><br>
-            <label>Password:</label><br>
-            <input type="password" name="password" placeholder="password" />  <br><br>
-            <input type="submit" name="submit" value = "login"/>
-        </form>
-        <div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?></div>
-
-    </div>
-
-
-
-
+    <?
+    include 'dbConnect.php';
+    ?>
+    <nav>
+        <ul>
+            <li><a href="login.php">Login here</a></li><br>
+            <li><a href="users.php">Users</a></li><br>
+            <li><a href="home.php">Register</a></li><br>
+            <li><a href="#">Suggestions box</a></li><br>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
 
 </main>
-<footer>
-</footer>
+<footer>Copyright Fredrick Muchila @RGU 2017</footer>
 </body>
 </html>
