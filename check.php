@@ -82,13 +82,6 @@ else
 
 
 
-        echo $username;
-
-
-
-        echo $password;
-
-
 
 
 
