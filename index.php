@@ -20,7 +20,7 @@
         ?>
         <p><a href="all.php">All Marvel Movies</a></p>
         <p><a href="xmen.php">All X-MEN Movies</a></p>
-        <p><a href="dbConnect.php">dbC30Aonnect</a></p>
+
 
     </section>
 
