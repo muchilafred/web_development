@@ -23,6 +23,10 @@ echo "hello world";
 
 include("dbconnect.php");
 
+echo $username;
+
+echo $password;
+
 ?>
 
 </body>
