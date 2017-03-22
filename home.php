@@ -1,5 +1,7 @@
 <?php
 
+echo "hello world";
+
 include("dbconnect.php");
 $username = $_POST["username"];
 $password = $_POST["password"];
