@@ -12,7 +12,7 @@
     <input type="submit" name="submit" value = "Register"/>
 
 </form>
-
+<?php
 if(isset($_POST["submit"]))
 {
     $name = $_POST["name"];
@@ -42,5 +42,6 @@ if($query)
     echo "Thank You! you are now registered.";
     }
     }
+?>
 </body>
 </html>
