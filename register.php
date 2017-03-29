@@ -1,47 +1,147 @@
+<?php
+ ob_start();
+ session_start();
+ if( isset($_SESSION['user'])!="" ){
+  header("Location: home.php");
+ }
+ include_once 'dbconnect.php';
+
+ $error = false;
+
+ if ( isset($_POST['btn-signup']) ) {
+  
+  // clean user inputs to prevent sql injections
+  $username = trim($_POST['username']);
+  $username = strip_tags($username);
+  $username = htmlspecialchars($username);
+  
+  $pass = trim($_POST['pass']);
+  $pass = strip_tags($pass);
+  $pass = htmlspecialchars($pass);
+  
+  // basic name validation
+  if (empty($name)) {
+   $error = true;
+   $nameError = "Please enter your full name.";
+  } else if (strlen($username) < 3) {
+   $error = true;
+   $nameError = "Name must have atleat 3 characters.";
+  } else if (!preg_match("/^[a-zA-Z ]+$/",$username)) {
+   $error = true;
+   $nameError = "Name must contain alphabets and space.";
+  }
+  
+  // password validation
+  if (empty($pass)){
+   $error = true;
+   $passError = "Please enter password.";
+  } else if(strlen($pass) < 6) {
+   $error = true;
+   $passError = "Password must have atleast 6 characters.";
+  }
+  
+  // password encrypt using SHA256();
+  $password = hash('sha256', $pass);
+  
+  // if there's no error, continue to signup
+  if( !$error ) {
+   
+   $query = "INSERT INTO users(userName,userPass) VALUES('$username','$password')";
+   $res = mysql_query($query);
+    
+   if ($res) {
+    $errTyp = "success";
+    $errMSG = "Successfully registered, you may login now";
+    unset($name);
+    unset($pass);
+   } else {
+    $errTyp = "danger";
+    $errMSG = "Something went wrong, try again later..."; 
+   } 
+    
+  }
+  
+  
+ }
+?>
+<!DOCTYPE html>
 <html>
 <head>
-    <titlle>registration form</titlle>
-
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Coding Cage - Login & Registration System</title>
+<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css"  />
+<link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
-<form method="post" action="">
-    <label>Username:</label><br>
-    <input type="text" name="username" placeholder="username" required /><br><br>
-    <label>Password:</label><br>
-    <input type="password" name="password" placeholder="password" required />  <br><br>
-    <input type="submit" name="submit" value = "Register"/>
 
-</form>
-<?php
-if(isset($_POST["submit"]))
-{
-    $name = $_POST["name"];
-    $email = $_POST["email"];
-    $password = $_POST["password"];
-     
-    $name = mysqli_real_escape_string($db, $name);
-    $email = mysqli_real_escape_string($db, $email);
-    $password = mysqli_real_escape_string($db, $password);
-    $password = md5($password);
-}
+<div class="container">
 
-$sql = "SELECT email FROM users WHERE email='$email'";
-$result = mysqli_query($db,$sql);
-$row = mysqli_fetch_array($result,MYSQLI_ASSOC);
- 
-if(mysqli_num_rows($result) == 1)
-{
-echo "Sorry...This email already exist..";
-}
-else
-{
-$query = mysqli_query($db, "INSERT INTO users (name, email, password)VALUES ('$name', '$email', '$password')");
- 
-if($query)
-    {
-    echo "Thank You! you are now registered.";
-    }
-    }
-?>
+ <div id="login-form">
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="off">
+    
+     <div class="col-md-12">
+        
+         <div class="form-group">
+             <h2 class="">Sign Up.</h2>
+            </div>
+        
+         <div class="form-group">
+             <hr />
+            </div>
+            
+            <?php
+   if ( isset($errMSG) ) {
+    
+    ?>
+    <div class="form-group">
+             <div class="alert alert-<?php echo ($errTyp=="success") ? "success" : $errTyp; ?>">
+    <span class="glyphicon glyphicon-info-sign"></span> <?php echo $errMSG; ?>
+                </div>
+             </div>
+                <?php
+   }
+   ?>
+            
+            <div class="form-group">
+             <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+             <input type="text" name="username" class="form-control" placeholder="Enter Name" maxlength="50" value="<?php echo $username ?>" />
+                </div>
+                <span class="text-danger"><?php echo $nameError; ?></span>
+            </div>
+         
+            
+            <div class="form-group">
+             <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+             <input type="password" name="pass" class="form-control" placeholder="Enter Password" maxlength="15" />
+                </div>
+                <span class="text-danger"><?php echo $passError; ?></span>
+            </div>
+            
+            <div class="form-group">
+             <hr />
+            </div>
+            
+            <div class="form-group">
+             <button type="submit" class="btn btn-block btn-primary" name="btn-signup">Sign Up</button>
+            </div>
+            
+            <div class="form-group">
+             <hr />
+            </div>
+            
+            <div class="form-group">
+             <a href="index.php">Sign in Here...</a>
+            </div>
+        
+        </div>
+   
+    </form>
+    </div> 
+
+</div>
+
 </body>
 </html>
+<?php ob_end_flush(); ?>
