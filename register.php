@@ -2,7 +2,7 @@
  ob_start();
  session_start();
  if( isset($_SESSION['user'])!="" ){
-  header("Location: home.php");
+  header("Location: index.php");
  }
  include_once 'dbconnect.php';
 
@@ -46,13 +46,13 @@
   // if there's no error, continue to signup
   if( !$error ) {
    
-   $query = "INSERT INTO users(userName,userPass) VALUES('$username','$password')";
+   $query = "INSERT INTO users(username,pass) VALUES('$username','$password')";
    $res = mysql_query($query);
     
    if ($res) {
     $errTyp = "success";
     $errMSG = "Successfully registered, you may login now";
-    unset($name);
+    unset($username);
     unset($pass);
    } else {
     $errTyp = "danger";
