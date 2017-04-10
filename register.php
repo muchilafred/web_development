@@ -4,7 +4,7 @@
  if( isset($_SESSION['user'])!="" ){
   header("Location: index.php");
  }
- include_once 'dbconnect.php';
+ include 'dbconnect.php';
 
  $error = false;
 
