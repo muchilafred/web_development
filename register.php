@@ -47,7 +47,7 @@
   if( !$error ) {
    
    $query = "INSERT INTO users(username,pass) VALUES('$username','$password')";
-   $res = mysql_query($query);
+   $res = mysqli_query($query);
     
    if ($res) {
     $errTyp = "success";
@@ -68,7 +68,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Coding Cage - Login & Registration System</title>
+<title>Student Login and Registration System</title>
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css"  />
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -132,7 +132,7 @@
             </div>
             
             <div class="form-group">
-             <a href="index.php">Sign in Here...</a>
+             <a href="index.php">Login here</a>
             </div>
         
         </div>
