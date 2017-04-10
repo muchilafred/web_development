@@ -124,7 +124,7 @@
             </div>
             
             <div class="form-group">
-             <button type="submit" class="btn btn-block btn-primary" name="btn-signup">Sign Up</button>
+             <button type="submit" class="btn btn-block btn-primary" name="btn-signup">Done</button>
             </div>
             
             <div class="form-group">
