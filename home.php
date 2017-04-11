@@ -18,67 +18,69 @@ if (!isset($_SESSION['user']) ) {
 
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Welcome To Student Management System- <?php echo $userRow['userEmail']; ?></title>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootsrap.min.css" type="text/css"  />
-    <link rel="stylesheet" href="style.css" type="text/css" />
-</head>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Student Black Board</title>
+        <style>
+            div.container {
+                width: 100%;
+                border: 1px solid gray;
+            }
+            header, footer {
+                padding: 1em;
+                color: white;
+                background-color: blue;
+                clear: left;
+                text-align: center;
+            }
+            nav {
+                float: left;
+                max-width: 160px;
+                margin: 0;
+                padding: 1em;
+            }
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            nav ul a {
+                text-decoration: none;
+            }
+            article {
+                margin-left: 170px;
+                border-left: 1px solid gray;
+                padding: 1em;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+
 <body>
+<header>
+    <h1>Welcome on Student Black-Board</h1>
+</header>
+<main>
 
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class ="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="http://www.codingcage.com">Coding cage</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="http://www.codingcage.com/2015/01/user-registration-and-login-script-using-php-mysql.html">Back to Article</a></li>
-                <li><a href="http://www.codingcage.com/search/label/jQuery">jQuery</a></li>
-                <li><a href="http://www.codingcage.com/search/label/PHP">PHP</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
+    <?
+    include 'dbconnect.php';
+    ?>
+    <nav>
+        <ul>
+            <li><a href="login.php">Login here</a></li><br>
+            <li><a href="users.php">Users</a></li><br>
+            <li><a href="register.php">Register</a></li><br>
+            <li><a href="#">Suggestions box</a></li><br>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
 
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="fasle">
-                        <span class="glyphicon glyphicon-user"></span>&nbsp;Hi' <?php echo $userRow['userEmail']; ?>&nbsp;<span class ="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="logout.php?logout"><span class="glychicon glyphicon-log-out"></span>&nbsp;Sign Out</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div><!--/.nav-collapse-->
-    </div>
-</nav>
-
-<div id="wrapper">
-
-    <div class="container">
-
-        <div class="page-header">
-            <h3>Coding Cage - Programming Blog</h3>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-12">
-                <h1>Focuses on PHP, MySQL, Ajax, jQuery, Web Design and more...</h1>
-            </div>
-        </div>
-
-    </div>
-
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
+</main>
+<footer>Copyright Fredrick Muchila @RGU 2017</footer>
 </body>
 </html>
 <?php ob_end_flush(); ?>
