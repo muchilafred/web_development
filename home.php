@@ -5,8 +5,6 @@
  * Date: 11/04/2017
  * Time: 17:23
  */
-<?php
-
 session_start();
 include_once 'dbconnect.php';
 
