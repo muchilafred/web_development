@@ -46,7 +46,7 @@
   // if there's no error, continue to signup
   if( !$error ) {
    
-   $query = "INSERT INTO 'users' (username,pass) VALUES('$username','$password')";
+   $query = "INSERT INTO users (username,pass) VALUES('$username','$password')";
    $res = mysqli_query($query);
     
    if ($res) {
