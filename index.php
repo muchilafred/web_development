@@ -139,7 +139,7 @@ if( isset($_POST['btn-login']) ) {
         </div>
 
     </div>
-    <footer>Copyright Fredrick Muchila @RGU 2017</footer>
+    <footer>Copyright 1513133 @RGU 2017</footer>
     </body>
     </html>
 <?php ob_end_flush(); ?>
