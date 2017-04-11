@@ -51,13 +51,9 @@ if (!isset($_SESSION['user']) ) {
 
     <div class="container">
 
-        <div class="page-header">
-            <h3>Coding Cage - Programming Blog</h3>
-        </div>
-
         <div class="row">
             <div class="col-lg-12">
-                <h1>Focuses on PHP, MySQL, Ajax, jQuery, Web Design and more...</h1>
+                <h1>Welcome to the home page</h1>
             </div>
         </div>
 
