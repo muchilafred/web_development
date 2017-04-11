@@ -44,7 +44,7 @@
   $password = hash('sha256', $pass);
   
   // if there's no error, continue to signup
-  if( !$error ) {
+  if(!$error ) {
    
    $query = "INSERT INTO users (username,pass) VALUES('$username','$password')";
    $res = mysqli_query($query);
