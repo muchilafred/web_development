@@ -81,7 +81,7 @@ if( isset($_POST['btn-login']) ) {
                 <div class="col-md-12">
 
                     <div class="form-group">
-                        <h2 class="">Sign In.</h2>
+                        <h2 class="">SIGN IN HERE</h2>
                     </div>
 
                     <div class="form-group">
