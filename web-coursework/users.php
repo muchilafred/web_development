@@ -6,26 +6,23 @@
 </head>
 <body>
 <header>
-    <h1>All Marvel Movies</h1>
+    <h1>Users from the users tables</h1>
 </header>
 <main>
     <section>
-        <h2>List of all Marvel Movies</h2>
-        <?
-        include 'dbConnect.php';
-        $sql_query = "SELECT marvelMovieID,yearReleased,title,productionStudio,notes FROM marvelmovies where UPPER(productionStudio) like '%FOX%'; ";
+        <h2>Users from the users tables</h2
+<?
+        include 'dbconnect.php';
+        $sql_query = "SELECT uid, username, email_address FROM users where uid = '12'; ";
         $result = $link->query($sql_query);
         while($row = $result->fetch_array()){
             // print out fields from row of data
-            echo "<p>".$row ['marvelMovieID']. " - ". $row ['title']." - ".$row ['productionStudio']."</p>";
+            echo "<p>".$row ['uid']. " - ". $row ['username']." - ".$row ['email_address']."</p>";
         }
         $result->close();
         $link->close();
         ?>
-
-
-
-    </section>
+</section>
 
 </main>
 <footer>

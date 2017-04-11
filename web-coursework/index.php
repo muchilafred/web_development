@@ -48,7 +48,7 @@
 <main>
 
     <?
-    include 'dbConnect.php';
+    include 'dbconnect.php';
     ?>
     <nav>
         <ul>
