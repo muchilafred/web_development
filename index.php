@@ -130,7 +130,7 @@ if( isset($_POST['btn-login']) ) {
                     </div>
 
                     <div class="form-group">
-                        <a href="register.php">Sign Up Here...</a>
+                        <a href="register.php">LOG IN HERE</a>
                     </div>
 
                 </div>
