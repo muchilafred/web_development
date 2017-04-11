@@ -7,7 +7,7 @@
  */
 ob_start();
 session_start();
-require_once 'db_connect.php';
+require_once 'dbconnect.php';
 
 if (!isset($_SESSION['user']) ) {
     header("location: index.php");
