@@ -160,7 +160,7 @@ if ( isset($_POST['btn-signup']) ) {
                 </div>
 
                 <div class="form-group">
-                    <a href="index.php">Sign in Here...</a>
+                    <a href="index.php">Login in Here</a>
                 </div>
 
             </div>
