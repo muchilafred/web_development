@@ -21,7 +21,7 @@ if (!isset($_SESSION['user']) ) {
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Welcome - <?php echo $userRow['userEmail']; ?></title>
+    <title>Welcome To Student Management System- <?php echo $userRow['userEmail']; ?></title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootsrap.min.css" type="text/css"  />
     <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
