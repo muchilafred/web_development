@@ -28,16 +28,6 @@ if (!isset($_SESSION['user']) ) {
 <body>
 
 <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-             <span class ="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="http://www.codingcage.com">Coding cage</a>
-        </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="http://www.codingcage.com/2015/01/user-registration-and-login-script-using-php-mysql.html">Back to Article</a></li>
@@ -50,12 +40,11 @@ if (!isset($_SESSION['user']) ) {
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="fasle">
                     <span class="glyphicon glyphicon-user"></span>&nbsp;Hi' <?php echo $userRow['userEmail']; ?>&nbsp;<span class ="caret"></span></a>
                 <ul class="dropdown-menu">
-                    <li><a href="logout.php?logout"><span class="glychicon glyphicon-log-out"></span>&nbsp;Sign Out</a></li>
+                    <li><a href="logout.php?logout"><span class="glychicon glyphicon-log-out"></span>Sign Out</a></li>
                 </ul>
                </li>
             </ul>
         </div><!--/.nav-collapse-->
-    </div>
 </nav>
 
 <div id="wrapper">
