@@ -67,7 +67,7 @@ if( isset($_POST['btn-login']) ) {
     <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Student Management System</title>
+        <title>Exclusive Fashion</title>
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css"  />
         <link rel="stylesheet" href="style.css" type="text/css" />
     </head>
@@ -139,7 +139,7 @@ if( isset($_POST['btn-login']) ) {
         </div>
 
     </div>
-    <footer>Copyright 1513133 @RGU 2017</footer>
+
     </body>
     </html>
 <?php ob_end_flush(); ?>
