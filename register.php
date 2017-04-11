@@ -10,7 +10,7 @@ session_start();
 if ( isset($_SESSION['user'])!=""){
     header("location: home.php");
 }
-include_once 'db_connect.php';
+include_once 'dbconnect.php';
 
 $error = false;
 
