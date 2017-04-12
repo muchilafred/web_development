@@ -35,7 +35,7 @@ if (!isset($_SESSION['user']) ) {
 		    <ul>
                     <li><a href="home.php">Suggestion</a></li>
                     <li><a href="home.php">Contact Us</a></li>
-                    <li><a href="logout.php">About Us</a></li>
+                    <li><a href="logout.php">log out</a></li>
                     </ul>
             </ul>
         </div>
