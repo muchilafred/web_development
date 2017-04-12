@@ -11,14 +11,14 @@ ul li{
      float:left;
      width:100px;
      height:40px;
-     background-colour:black;
+     background-color:black;
      font-size:20px;
      line-height:40px
      text-align:center;
      opacity:8;
 }
 ul li a:hover{
-     background-colour:orange;
+     background-color:orange;
 }
 ul li ul li{
 	display:none;
