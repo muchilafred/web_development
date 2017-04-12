@@ -20,8 +20,8 @@ if (!isset($_SESSION['user']) ) {
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Welcome - <?php echo $userRow['userEmail']; ?></title>
-    <link href="stylesheet1" rel="stylesheet.css" type="text/css">
+    <title>Home page</title>
+    <link href="stylesheet1" rel="stylesheet.css" type="text/css" />
 </head>
 <body>
         <div>
@@ -35,18 +35,10 @@ if (!isset($_SESSION['user']) ) {
 		    <ul>
                     <li><a href="home.php">Suggestion</a></li>
                     <li><a href="home.php">Contact Us</a></li>
-                    <li><a href="home.php">About Us</a></li>
+                    <li><a href="logout.php">About Us</a></li>
                     </ul>
             </ul>
         </div>
-
-
-                <h1>Welcome to the home page</h1>
-		<li><a href="logout.php?logout"><span class="glychicon glyphicon-log-out"></span>Sign Out</a></li>
-            
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 </body>
 </html>
