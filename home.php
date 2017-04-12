@@ -32,7 +32,7 @@ if (!isset($_SESSION['user']) ) {
 		         <li><a href="home.php">About Us</a></li>
 		         <li><a href="home.php">About Us</a></li>
       	            </ul>
-                    <ul>
+		    <ul>
                     <li><a href="home.php">Suggestion</a></li>
                     <li><a href="home.php">Contact Us</a></li>
                     <li><a href="home.php">About Us</a></li>
@@ -40,20 +40,10 @@ if (!isset($_SESSION['user']) ) {
             </ul>
         </div>
 
-<div id="wrapper">
 
-    <div class="container">
-
-        <div class="row">
-            <div class="col-lg-12">
                 <h1>Welcome to the home page</h1>
 		<li><a href="logout.php?logout"><span class="glychicon glyphicon-log-out"></span>Sign Out</a></li>
-            </div>
-        </div>
-
-    </div>
-
-</div>
+            
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
