@@ -21,19 +21,16 @@ if (!isset($_SESSION['user']) ) {
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Welcome - <?php echo $userRow['userEmail']; ?></title>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootsrap.min.css" type="text/css"  />
     <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
-
-<nav class="navbar navbar-default navbar-fixed-top">
-        <div id="navbar" class="navbar-collapse collapse">
+        <div>
             <ul>
                 <li><a href="home.php">class</a></li>
                     <ul>
-		                <li><a href="home.php">About Us</a></li>
-		                <li><a href="home.php">About Us</a></li>
-		                <li><a href="home.php">About Us</a></li>
+		         <li><a href="home.php">About Us</a></li>
+		         <li><a href="home.php">About Us</a></li>
+		         <li><a href="home.php">About Us</a></li>
       	            </ul>
                     <ul>
                     <li><a href="home.php">Suggestion</a></li>
@@ -42,8 +39,7 @@ if (!isset($_SESSION['user']) ) {
                     <li><a href="logout.php?logout"><span class="glychicon glyphicon-log-out"></span>Sign Out</a></li>
                     </ul>
             </ul>
-        </div><!--/.nav-collapse-->
-</nav>
+        </div>
 
 <div id="wrapper">
 
