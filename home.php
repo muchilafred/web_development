@@ -21,7 +21,7 @@ if (!isset($_SESSION['user']) ) {
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Welcome - <?php echo $userRow['userEmail']; ?></title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link href="stylesheet1" rel="style.css" type="text/css" />
 </head>
 <body>
         <div>
