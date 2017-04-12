@@ -36,7 +36,6 @@ if (!isset($_SESSION['user']) ) {
                     <li><a href="home.php">Suggestion</a></li>
                     <li><a href="home.php">Contact Us</a></li>
                     <li><a href="home.php">About Us</a></li>
-                    <li><a href="logout.php?logout"><span class="glychicon glyphicon-log-out"></span>Sign Out</a></li>
                     </ul>
             </ul>
         </div>
@@ -48,6 +47,7 @@ if (!isset($_SESSION['user']) ) {
         <div class="row">
             <div class="col-lg-12">
                 <h1>Welcome to the home page</h1>
+		<li><a href="logout.php?logout"><span class="glychicon glyphicon-log-out"></span>Sign Out</a></li>
             </div>
         </div>
 
