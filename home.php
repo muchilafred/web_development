@@ -28,20 +28,19 @@ if (!isset($_SESSION['user']) ) {
 
 <nav class="navbar navbar-default navbar-fixed-top">
         <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="http://www.amazon.co.uk">Amazon</a></li>
-                <li><a href="http://www.google.co.uk">Google</a></li>
-                <li><a href="http://www.rgu.co.uk">RGU</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-
-               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="fasle">
-                    <span class="glyphicon glyphicon-user"></span>&nbsp;Hi' <?php echo $userRow['userName']; ?>&nbsp;<span class ="caret"></span></a>
-                <ul class="dropdown-menu">
+            <ul>
+                <li><a href="home.php">class</a></li>
+                    <ul>
+		                <li><a href="home.php">About Us</a></li>
+		                <li><a href="home.php">About Us</a></li>
+		                <li><a href="home.php">About Us</a></li>
+      	            </ul>
+                    <ul>
+                    <li><a href="home.php">Suggestion</a></li>
+                    <li><a href="home.php">Contact Us</a></li>
+                    <li><a href="home.php">About Us</a></li>
                     <li><a href="logout.php?logout"><span class="glychicon glyphicon-log-out"></span>Sign Out</a></li>
-                </ul>
-               </li>
+                    </ul>
             </ul>
         </div><!--/.nav-collapse-->
 </nav>
