@@ -27,11 +27,11 @@ if (!isset($_SESSION['user']) ) {
         <div>
             <ul>
                 <li><a href="index.php">class</a></li>
-		         <li><a href="home.php">About Us</a></li>
-		         <li><a href="home.php">About Us</a></li>
-		         <li><a href="home.php">About Us</a></li>
-                    <li><a href="home.php">Suggestion</a></li>
-                    <li><a href="home.php">Contact Us</a></li>
+		         <li><a href="session.php">About Us</a></li>
+		         <li><a href="session.php">About Us</a></li>
+		         <li><a href="session.php">About Us</a></li>
+                    <li><a href="session.php">Suggestion</a></li>
+                    <li><a href="session.php">Contact Us</a></li>
                     <li><a href="logout.php">log out</a></li>
               
             </ul>

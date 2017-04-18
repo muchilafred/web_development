@@ -11,7 +11,7 @@ require_once 'dbconnect.php';
 
 // it will never let you open index(login) page if session is set
 if ( isset($_SESSION['user'])!="" ) {
-    header("Location: home.php");
+    header("Location: session.php");
     exit;
 }
 
@@ -54,7 +54,7 @@ if( isset($_POST['btn-login']) ) {
 
         if( $row['userPass']&& mysqli_num_rows($res) == 1) {
             $_SESSION['user'] = $row['userId'];
-            header("Location: home.php");
+            header("Location: session.php");
         } else {
             $errMSG = "Incorrect Credentials, Try again...";
         }

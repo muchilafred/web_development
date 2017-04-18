@@ -9,7 +9,7 @@ session_start();
 if (!isset($_SESSION['user'])) {
     header("location: index.php");
 } else if (isset($_SESSION['user'])!="") {
-    header("location: home.php");
+    header("location: session.php");
 }
 
 if (isset($_GET['logout'])) {

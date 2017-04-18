@@ -66,7 +66,7 @@ else
 
     }
 
-    if($pass){header("location:home.php");}
+    if($pass){header("location:session.php");}
 
     else {
 
