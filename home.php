@@ -36,7 +36,7 @@ if (!isset($_SESSION['user']) ) {
               
             </ul>
         </div>
-
+        <h2 class="">Welcome <?php $_SESSION['user']?></h2>
 </body>
 </html>
 <?php ob_end_flush(); ?>
