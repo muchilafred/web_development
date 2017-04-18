@@ -26,7 +26,7 @@ if (!isset($_SESSION['user']) ) {
 <body>
         <div>
             <ul>
-                <li><a href="home.php">class</a></li>
+                <li><a href="index.php">class</a></li>
 		         <li><a href="home.php">About Us</a></li>
 		         <li><a href="home.php">About Us</a></li>
 		         <li><a href="home.php">About Us</a></li>
