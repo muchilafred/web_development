@@ -19,4 +19,3 @@ if (isset($_GET['logout'])) {
     header("location: index.php");
     exit;
 }
-?>
