@@ -67,7 +67,7 @@ if( isset($_POST['btn-login']) ) {
     <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Exclusive Fashion</title>
+        <title>Student Groups</title>
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css"  />
         <link rel="stylesheet" href="style.css" type="text/css" />
     </head>
