@@ -5,7 +5,7 @@
  * Date: 11/04/2017
  * Time: 17:23
  */
-ob_start();
+
 session_start();
 include 'dbconnect.php';
 
@@ -39,4 +39,4 @@ if (!isset($_SESSION['user']) ) {
 
 </body>
 </html>
-<?php ob_end_flush(); ?>
+
