@@ -75,7 +75,7 @@ if ( isset($_POST['btn-signup']) ) {
 
     if ($result) {
         $errTyp = "success";
-        $errMSG = "Successfully registered, you may login now";
+        $errMSG = "You have successfully registered, you may login now";
         unset($name);
         unset($email);
         unset($pass);
