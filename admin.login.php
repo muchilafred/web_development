@@ -9,14 +9,18 @@
 ?>
 <html>
 <head>
+    <style>
+        {
+            background-color: #93B874;
+        }
+
+    </style>
 
     <title>Admin login page</title>
 
 </head>
 <body>
-{
-background-color: #93B874;
-}
+
 
 <h2> Login in</h2> <div class="loginBox">
 
