@@ -134,7 +134,7 @@ if( isset($_POST['btn-login']) ) {
 
                     <div class="form-group">
                         <a href="register.php">REGISTER IN HERE</a><br><br>
-                        <a href="admin.login.php">ADMIN LOGIN HERE</a>
+                        <a href="admin.login.php">ADMIN LOGIN </a>
                     </div>
 
                 </div>
