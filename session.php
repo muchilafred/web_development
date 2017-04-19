@@ -12,8 +12,9 @@
 <html>
 <head>
 <title>Student home page</title>
-    <h2>Welcome to the student home page</h2>
+
 </head>
+
 <body>
 
 <h2>Select your Course</h2>
