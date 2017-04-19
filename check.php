@@ -4,7 +4,7 @@ if(empty($_POST["username"]) || empty($_POST["password"]))
 }
 else
 {
-    $username = $_POST['userName'];
+    $username = $_POST['username'];
     $password = $_POST['password'];
     $sql ="SELECT * FROM admin";
     $result = mysqli_query ($link,$sql);
@@ -12,11 +12,11 @@ else
 
         $pass=false;
     while($row =$result->fetch_array()) {
-        if ($username == $row ['username'] && $password == $row ['password']) {
+        if ($username == $row ['userName'] && $password == $row ['adminPass']) {
             $pass = true;
         }
     }
-    if($pass){header("location:backend.php");}
+    if($pass){header("location:adminpage.php");}
     else {
 
 
@@ -27,4 +27,4 @@ else
         echo $password;
     }
 }
-?>
+?>0
