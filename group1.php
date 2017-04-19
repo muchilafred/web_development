@@ -21,16 +21,15 @@
     <table>
         <thead>
         <tr>
-            <th>User-ID</th>
-            <th>User-Name</th>
-            <th>User-email</th>
-            <th>courseName</th>
+            <th>Student Name</th>
+            <th>Email address</th>
+            <th>Course</th>
         </tr>
         </thead>
         <tbody>
         <?include 'dbConnect.php';
 
-        $sql_query = "SELECT userId,userName,userEmail,courseName FROM student WHERE groupId = '1';";
+        $sql_query = "SELECT userName,userEmail,courseName FROM student WHERE groupId = '1';";
 
         $result = $link->query($sql_query);
 
