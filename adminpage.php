@@ -27,7 +27,7 @@
             <th>password</th>
         </tr>
         </table>
-
+    <tbody>
     <?include 'dbConnect.php';
 
     $sql_query = "SELECT userId,userName,userEmail,userPass FROM users; ";
@@ -53,7 +53,7 @@
     $result->close();
     $link->close();
     ?>
-
+    </tbody>
 
 
 </section>
