@@ -165,7 +165,7 @@ if ( isset($_POST['btn-signup']) ) {
 
                     <a href="index.php">Student Login</a><br />
 
-                    <a href="adminpage.php">Admin Login</a>
+                    <a href="admin.login.php">Admin Login</a>
 
 
 
