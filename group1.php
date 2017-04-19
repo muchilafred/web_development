@@ -53,7 +53,7 @@
 
 </section>
 
-<a href="index.php">Main page</a>
+<a href="session.php">Main page</a>
 <a href="logout.php">Login here</a>
 </body>
 </html>

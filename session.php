@@ -26,7 +26,6 @@
 </ul>
 
 
-<a href="session.php">Back</a><br>
 <a href="logout.php">Logout</a>
 
 
