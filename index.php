@@ -126,7 +126,7 @@ if( isset($_POST['btn-login']) ) {
                         <button type="submit" class="btn btn-block btn-primary" name="btn-login">Sign In</button>
 
                     </div>
-                    
+
 
                     <div class="form-group">
                         <hr />
@@ -139,6 +139,13 @@ if( isset($_POST['btn-login']) ) {
                 </div>
 
             </form>
+
+            <ul>
+
+                <li><a href="adminpage.php">admin</a></li>
+
+            </ul>
+
         </div>
 
     </div>
