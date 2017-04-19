@@ -13,7 +13,6 @@ if (!isset($_SESSION['user']) ) {
     header("location: index.php");
     exit;
 }?>
-//User logged in details
 
 
 
