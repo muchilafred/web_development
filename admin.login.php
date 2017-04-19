@@ -11,7 +11,7 @@ include 'dbconnect.php';
 
 // it will never let you open index(login) page if session is set
 if ( isset($_SESSION['user'])!="" ) {
-    header("Location: adminpage.php");
+    header("Location: admin.page.php");
     exit;
 }
 
