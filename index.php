@@ -78,6 +78,7 @@ if( isset($_POST['btn-login']) ) {
         <div id="login-form">
             <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="off">
 
+
                 <div class="col-md-12">
 
                     <div class="form-group">
@@ -122,6 +123,8 @@ if( isset($_POST['btn-login']) ) {
                     </div>
 
                     <div class="form-group">
+                        <button type="submit" class="btn btn-block btn-primary" name="btn-login">Sign In</button>
+                        <button type="submit" class="btn btn-block btn-primary" name="btn-login">Sign In</button>
                         <button type="submit" class="btn btn-block btn-primary" name="btn-login">Sign In</button>
                     </div>
 
