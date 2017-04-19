@@ -17,12 +17,12 @@
 
 <body>
 
-<h2>Select your Course</h2>
+<h2>Select your Course Group</h2>
 
 <ul>
     <li><a href="group1.php">Network Security</a> </li>
-    <li><a href="index.php">Database Administration</li>
-    <li><a href="index.php">Data Computing</li>
+    <li><a href="group2.php">Database Administration</li>
+    <li><a href="group3.php">Data Computing</li>
 </ul>
 
 
