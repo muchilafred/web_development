@@ -43,9 +43,7 @@
                     <td>'.$row ['userPass']. '</td>
                
                 </tr>';
-
-
-
+        
     }
     $result->close();
     $link->close();
