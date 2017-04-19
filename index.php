@@ -124,8 +124,15 @@ if( isset($_POST['btn-login']) ) {
 
                     <div class="form-group">
                         <button type="submit" class="btn btn-block btn-primary" name="btn-login">Sign In</button>
+
+                    </div>
+                    <div class="form-group">
                         <button type="submit" class="btn btn-block btn-primary" name="btn-login">Sign In</button>
+
+                    </div>
+                    <div class="form-group">
                         <button type="submit" class="btn btn-block btn-primary" name="btn-login">Sign In</button>
+
                     </div>
 
                     <div class="form-group">
