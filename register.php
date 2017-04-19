@@ -95,12 +95,6 @@ if ( isset($_POST['btn-signup']) ) {
 </head>
 <body>
 
-<ul>
-
-    <li><a href="adminpage.php">admin</a></li>
-
-</ul>
-
 
 <div class="container">
 
@@ -180,11 +174,21 @@ if ( isset($_POST['btn-signup']) ) {
                 </div>
 
 
-          
+
+
 
             </div>
 
         </form>
+
+
+        <ul>
+
+            <li><a href="adminpage.php">admin</a></li>
+
+        </ul>
+
+
     </div>
 
 </div>
