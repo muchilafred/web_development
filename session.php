@@ -20,7 +20,7 @@
 <h2>Select your Course</h2>
 
 <ul>
-    <li><a href="index.php">Network Security</a> </li>
+    <li><a href="group1.php">Network Security</a> </li>
     <li><a href="index.php">Database Administration</li>
     <li><a href="index.php">Data Computing</li>
 </ul>
