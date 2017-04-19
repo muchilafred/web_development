@@ -11,14 +11,32 @@
 
 <head>
 
-    <title>
-
-hello there!!
-    </title>
+    <title>Admin Home page</title>
 </head>
 
 <body>
+<section>
+    <h2>List of Students</h2>
+    <?
+    include 'dbConnect.php';
+    $sql_query = "SELECT userId,userName,userEmail,userPass FROM users; ";
+    $result = $link->query($sql_query);
+    while($row = $result->fetch_array()){
+        // print out fields from row of data
+        echo "<p>".$row ['userId']. "  -  ". $row ['userName']."  -  ".$row ['userEmail']."  -  ".$row ['userPass'].$db."</p>";
 
-<a href="index.php">Student Login</a>
+        echo "<p>".$row ['userId']. "  -  ". $row ['userName']."  -  ".$row ['userEmail']."  -  ".$row ['userPass'].$db."</p>";
+        //     }
+    }
+    $result->close();
+    $link->close();
+    ?>
+
+
+
+</section>
+
+<a href="index.php">Main page</a>
+<a href="logout.php">Login here</a>
 </body>
 </html>
