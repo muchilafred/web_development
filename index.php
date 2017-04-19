@@ -140,12 +140,11 @@ if( isset($_POST['btn-login']) ) {
 
             </form>
 
-            <ul>
+     
 
-                <li><a href="adminpage.php">admin</a></li>
+             
 
-            </ul>
-
+        
         </div>
 
     </div>

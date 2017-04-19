@@ -167,15 +167,19 @@ if ( isset($_POST['btn-signup']) ) {
                 </div>
 
                 <div class="form-group">
-                    <a href="index.php">Student Login</a>
+
+                    <ul>
+
+                    <li><a href="index.php">Student Login</a></li>
+
+                    <li><a href="adminpage.php">admin</a></li>
+                    </ul>
                 </div>
 
 
-                <ul>
 
-                   <li><a href="adminpage.php">admin</a></li>
 
-                </ul>
+             
 
 
 
