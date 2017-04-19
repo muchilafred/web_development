@@ -164,8 +164,11 @@ if ( isset($_POST['btn-signup']) ) {
                 </div>
 
 
-                <a href="adminpage.php">admin</a>
+                <ul>
 
+                   <li><a href="adminpage.php">admin</a></li>
+
+                </ul>
 
 
 
