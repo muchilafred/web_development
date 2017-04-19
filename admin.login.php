@@ -5,11 +5,7 @@
 
 <head>
 
-    <title>
-
-        Admin
-
-    </title>
+    <title>Admin login page</title>
 
 
 </head>
