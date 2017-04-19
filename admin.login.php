@@ -47,14 +47,14 @@ if( isset($_POST['btn-login']) ) {
 
         $password = $pass; // password hashing using SHA256
 
-        $sql_query ="SELECT userId, userName, userPass FROM admins WHERE userEmail='$email'";
+        $sql_query ="SELECT userId, userName, userPass FROM admin WHERE userEmail='$email'";
         $res= mysqli_query($link, $sql_query);
         $row= $res->fetch_array();
         // if uname/pass correct it returns must be 1 row
 
         if( $row['userPass']&& mysqli_num_rows($res) == 1) {
             $_SESSION['user'] = $row['userId'];
-            header("Location: adminpage.php");
+            header("Location: index.php");
         } else {
             $errMSG = "Incorrect Credentials, Try again...";
         }
