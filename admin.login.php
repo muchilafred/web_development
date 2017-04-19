@@ -1,8 +1,6 @@
 
 
 <html>
-
-
 <head>
     <style>
         div.container {
@@ -44,44 +42,32 @@
 
     <title>Admin login page</title>
 
-
 </head>
-
-
 <body>
-
+<nav>
+    <ul>
+        <li><a href="#">London</a></li>
+        <li><a href="#">Paris</a></li>
+        <li><a href="#">Tokyo</a></li>
+    </ul>
+</nav>
 
 <h2>Please Login in</h2> <div class="loginBox">
 
-
     <h3>Login Form</h3>
-
     <br ><br >
-
 
     <form method="post" action="check.php">
 
-
         <label >Username:</label ><br >
-
         <input type="text" name="username" placeholder="username" /><br ><br >
-
-
         <label>Password:</label><br >
-
         <input type="password" name="password" placeholder="password" />  <br ><br >
-
-
         <input type="submit" name="submit" value = "login"/>
 
     </form>
 
 
-
-
-
 </body>
-
-
 </html>
 
