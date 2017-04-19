@@ -26,7 +26,7 @@
             <th>User-email</th>
             <th>password</th>
         </tr>
-        </table>
+
     <tbody>
     <?include 'dbConnect.php';
 
@@ -45,16 +45,14 @@
                
                 </tr>';
 
-      //  echo "<p>".$row ['userId']. "  -  ". $row ['userName']."  -  ".$row ['userEmail']."  -  ".$row ['userPass'].$db."</p>";
 
-       // echo "<p>".$row ['userId']. "  -  ". $row ['userName']."  -  ".$row ['userEmail']."  -  ".$row ['userPass'].$db."</p>";
-        //     }
+        
     }
     $result->close();
     $link->close();
     ?>
     </tbody>
-
+    </table>
 
 </section>
 
