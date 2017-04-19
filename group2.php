@@ -21,24 +21,22 @@
     <table>
         <thead>
         <tr>
-            <th>User-ID</th>
-            <th>User-Name</th>
-            <th>User-email</th>
-            <th>courseName</th>
+            <th>Student Name</th>
+            <th>Email address</th>
+            <th>Course </th>
         </tr>
         </thead>
         <tbody>
         <?include 'dbConnect.php';
 
-        $sql_query = "SELECT userId,userName,userEmail,courseName FROM student WHERE groupId = '2';";
+        $sql_query = "SELECT userName,userEmail,courseName FROM student WHERE groupId = '2';";
 
         $result = $link->query($sql_query);
 
         while($row = $result->fetch_array()){
 
             // print out fields from row of data
-            echo '<tr><td>'.$row['userId'].'</td>
-                    <td>'.$row['userName'].'</td>
+            echo '<tr><td>'.$row['userName'].'</td>
                    <td>'.$row ['userEmail']. '</td>
                     <td>'.$row ['courseName']. '</td>
                
