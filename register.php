@@ -171,25 +171,21 @@ if ( isset($_POST['btn-signup']) ) {
 
                     <a href="index.php">Student Login</a>
 
-                    <<a href="adminpage.php">admin</a>
-
-                </div>
-
-
-                <div class="form-group">
-                    <hr />
-                </div>
-
-                <div class="form-group">
-
-
                     <a href="index.php">Student Login</a>
 
-                    <<a href="adminpage.php">admin</a>
 
                 </div>
 
 
+                <div id="">
+
+
+
+                    <a href="adminpage.php">admin</a>
+
+
+
+                </div>
 
 
 
