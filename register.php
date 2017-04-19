@@ -167,7 +167,7 @@ if ( isset($_POST['btn-signup']) ) {
 
                     <a href="index.php">Student Login</a>
 
-                    <a href="index.php">Student Login</a>
+         
 
 
 
