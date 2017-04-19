@@ -9,13 +9,7 @@
 ?>
 <html>
 <head>
-    <style>
-        {
-            background-color: #orange;
-        }
-
-    </style>
-
+    
     <title>Admin login page</title>
 
 </head>
