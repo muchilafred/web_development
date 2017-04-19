@@ -26,7 +26,7 @@
 </ul>
 
 
-<a href="index.php">Main page</a>
+<a href="session.php">Back</a><br>
 <a href="logout.php">Logout</a>
 
 
