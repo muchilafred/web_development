@@ -16,7 +16,7 @@
 <body>
 <h2>Select your Course</h2>
 
-<ul style="list-style-type:disc">
+<ul>
     <li><a href="index.php">Network Security</a> </li>
     <li>Database Administration</li>
     <li>Data Computing</li>
