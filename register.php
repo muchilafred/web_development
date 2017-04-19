@@ -167,7 +167,7 @@ if ( isset($_POST['btn-signup']) ) {
 
                     <a href="index.php">Student Login</a>
 
-
+                    <a href="index.php">Student Login</a>
 
 
 
@@ -182,11 +182,6 @@ if ( isset($_POST['btn-signup']) ) {
         </form>
 
 
-        <ul>
-
-            <li><a href="adminpage.php">admin</a></li>
-
-        </ul>
 
 
     </div>
