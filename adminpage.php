@@ -45,9 +45,9 @@
                
                 </tr>';
 
-        echo "<p>".$row ['userId']. "  -  ". $row ['userName']."  -  ".$row ['userEmail']."  -  ".$row ['userPass'].$db."</p>";
+      //  echo "<p>".$row ['userId']. "  -  ". $row ['userName']."  -  ".$row ['userEmail']."  -  ".$row ['userPass'].$db."</p>";
 
-        echo "<p>".$row ['userId']. "  -  ". $row ['userName']."  -  ".$row ['userEmail']."  -  ".$row ['userPass'].$db."</p>";
+       // echo "<p>".$row ['userId']. "  -  ". $row ['userName']."  -  ".$row ['userEmail']."  -  ".$row ['userPass'].$db."</p>";
         //     }
     }
     $result->close();
