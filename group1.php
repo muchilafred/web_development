@@ -36,8 +36,7 @@
         while($row = $result->fetch_array()){
 
             // print out fields from row of data
-            echo '<tr><td>'.$row['userId'].'</td>
-                    <td>'.$row['userName'].'</td>
+            echo '<tr><td>'.$row['userName'].'</td>
                    <td>'.$row ['userEmail']. '</td>
                     <td>'.$row ['courseName']. '</td>
                
