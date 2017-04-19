@@ -95,6 +95,13 @@ if ( isset($_POST['btn-signup']) ) {
 </head>
 <body>
 
+<ul>
+
+    <li><a href="adminpage.php">admin</a></li>
+
+</ul>
+
+
 <div class="container">
 
     <div id="login-form">
