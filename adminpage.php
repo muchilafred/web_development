@@ -37,16 +37,15 @@
     while($row = $result->fetch_array()){
 
         // print out fields from row of data
-        echo '<tr>
-                    <td>'.$row['userId'].'</td>
-                    <td>'.$row['userName'].'</td>
-                    <td>'.$row ['userEmail']. '</td>
-                    <td>'.$row ['userPass']. '</td>
+        echo '<tr><td>'.$row['userId'].'</td></tr>
+                    <tr><td>'.$row['userName'].'</td></tr>
+                    <tr><td>'.$row ['userEmail']. '</td></tr>
+                    <tr><td>'.$row ['userPass']. '</td></tr>
                
                 </tr>';
 
 
-        
+
     }
     $result->close();
     $link->close();
