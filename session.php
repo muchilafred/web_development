@@ -15,7 +15,7 @@
 
 </head>
 
-<body>
+<body bgcolor="#1e90ff">
 
 <h2>Select your Course Group</h2>
 
