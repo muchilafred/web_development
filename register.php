@@ -16,7 +16,7 @@ $error = false;
 
 if ( isset($_POST['btn-signup']) ) {
 
-    //prevent sql injection
+    
     $name = trim($_POST['name']);
     $name = strip_tags($name);
     $name = htmlspecialchars($name);
@@ -29,7 +29,7 @@ if ( isset($_POST['btn-signup']) ) {
     $pass = strip_tags($pass);
     $pass = htmlspecialchars($pass);
 
-    //form validation
+
     if (empty($name)) {
         $error = true;
         $nameerror = "Please enter you full name.";
@@ -41,12 +41,12 @@ if ( isset($_POST['btn-signup']) ) {
         $nameError = "Name must contain alphabets and space.";
     }
 
-    //email field validation
+
     if ( !filter_var($email,FILTER_VALIDATE_EMAIL)) {
         $error = true;
         $emailError = "Please enter valid email address.";
     } else {
-        //check email
+
         $sql_query = "SELECT userEmail FROM users WHERE userEmail ='$email'";
         $result = $link->query($sql_query);
         $count = $result->num_rows;
@@ -55,7 +55,7 @@ if ( isset($_POST['btn-signup']) ) {
             $emailError = "Provided Email is already in use.";
         }
     }
-    //password validation
+
     if (empty($pass)){
         $error = true;
         $passError = "Please enter password";
@@ -64,7 +64,7 @@ if ( isset($_POST['btn-signup']) ) {
         $passError = "password must have atleast 6 characters.";
     }
 
-    //password encryption
+
     $password = hash('sha256', (get_magic_quotes_gpc() ? stripslashes($pass) : $pass));
 
 
