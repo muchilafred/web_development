@@ -9,7 +9,7 @@ ob_start();
 session_start();
 include 'dbconnect.php';
 
-// it will never let you open index(login) page if session is set
+
 if ( isset($_SESSION['user'])!="" ) {
     header("Location: session.php");
     exit;
@@ -19,7 +19,7 @@ $error = false;
 
 if( isset($_POST['btn-login']) ) {
 
-    // prevent sql injections/ clear user invalid inputs
+    // this prevent sql injections
     $email = trim($_POST['email']);
     $email = strip_tags($email);
     $email = htmlspecialchars($email);
@@ -27,7 +27,7 @@ if( isset($_POST['btn-login']) ) {
     $pass = trim($_POST['pass']);
     $pass = strip_tags($pass);
     $pass = htmlspecialchars($pass);
-    // prevent sql injections / clear user invalid inputs
+
 
     if(empty($email)){
         $error = true;
@@ -39,7 +39,7 @@ if( isset($_POST['btn-login']) ) {
 
     if(empty($pass)){
         $error = true;
-        $passError = "Please enter your password again.";
+        $passError = "Enter your password again.";
     }
 
     // this checks error there's no error, user will continue to login
