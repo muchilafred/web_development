@@ -19,7 +19,7 @@ $error = false;
 
 if( isset($_POST['btn-login']) ) {
 
-    // this prevent sql injections
+
     $email = trim($_POST['email']);
     $email = strip_tags($email);
     $email = htmlspecialchars($email);
@@ -42,15 +42,15 @@ if( isset($_POST['btn-login']) ) {
         $passError = "Enter your password again.";
     }
 
-    // this checks error there's no error, user will continue to login
+
     if (!$error) {
 
-        $password = hash('sha256', (get_magic_quotes_gpc() ? stripslashes($pass) : $pass)); // password hashing using SHA256
+        $password = hash('sha256', (get_magic_quotes_gpc() ? stripslashes($pass) : $pass)); 
 
         $sql_query ="SELECT userId, userName, userPass FROM users WHERE userEmail='$email'";
         $res= mysqli_query($link, $sql_query);
         $row= $res->fetch_array();
-        // if uname/pass correct it returns must be 1 row
+
 
         if( $row['userPass']&& mysqli_num_rows($res) == 1) {
             $_SESSION['user'] = $row['userId'];
