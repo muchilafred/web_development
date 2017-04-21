@@ -41,7 +41,7 @@ if ( isset($_POST['btn-signup']) ) {
         $nameError = "Name must contain alphabets and space.";
     }
 
-    //email valivation
+    //email field validation
     if ( !filter_var($email,FILTER_VALIDATE_EMAIL)) {
         $error = true;
         $emailError = "Please enter valid email address.";
@@ -55,7 +55,7 @@ if ( isset($_POST['btn-signup']) ) {
             $emailError = "Provided Email is already in use.";
         }
     }
-    //paas validation
+    //password validation
     if (empty($pass)){
         $error = true;
         $passError = "Please enter password";
@@ -64,10 +64,10 @@ if ( isset($_POST['btn-signup']) ) {
         $passError = "password must have atleast 6 characters.";
     }
 
-    //pass encryption
-    $password = $pass;
+    //password encryption
+    $password = hash('sha256', (get_magic_quotes_gpc() ? stripslashes($pass) : $pass));
 
-    //no erro continue
+
 }if (!$error) {
 
     $sql_query = "INSERT INTO users(userName,userEmail,userPass) VALUES ('$name','$email','$password')";
