@@ -14,7 +14,7 @@
     <title>Admin Home page</title>
 </head>
 
-<body>
+<body bgcolor="#1e90ff">
 <section>
     <h2>List of Students</h2>
 
@@ -50,6 +50,11 @@
     ?>
     </tbody>
     </table>
+    <ul>
+        <li><a href="group1.php">Network Security</a> </li>
+        <li><a href="group2.php">Database Administration</li>
+        <li><a href="group3.php">Data Computing</li>
+    </ul>
 
 </section>
 
