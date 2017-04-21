@@ -14,7 +14,7 @@
     <title>Admin Home page</title>
 </head>
 
-<body bgcolor="#1e90ff">
+<body bgcolor="#ffd700">
 <section>
     <h2>Admin view</h2>
 
