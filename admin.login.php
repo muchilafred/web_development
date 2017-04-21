@@ -13,7 +13,7 @@
     <title>Admin login page</title>
 
 </head>
-<body>
+<body bgcolor="#b0c4de">
 
 
 <h2> Login in</h2> <div class="loginBox">
