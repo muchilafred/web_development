@@ -52,7 +52,7 @@
 
 </section>
 
-<a href="index.php">Main page</a><br>
+<a href="adminpage.php">Back</a><br>
 <a href="logout.php">Login here</a><br>
 </body>
 </html>
