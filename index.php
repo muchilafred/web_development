@@ -42,10 +42,10 @@ if( isset($_POST['btn-login']) ) {
         $passError = "Please enter your password.";
     }
 
-    // if there's no error, continue to login
+    // this checks error there's no error, user will continue to login
     if (!$error) {
 
-        $password = $pass; // password hashing using SHA256
+        $password = hash('sha256', (get_magic_quotes_gpc() ? stripslashes($pass) : $pass)); // password hashing using SHA256
 
         $sql_query ="SELECT userId, userName, userPass FROM users WHERE userEmail='$email'";
         $res= mysqli_query($link, $sql_query);
