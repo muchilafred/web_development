@@ -14,7 +14,7 @@
     <title>Group1 Selection</title>
 </head>
 
-<body>
+<body bgcolor="#ff8c00">
 <section>
     <h2>Group1 Students</h2>
 
