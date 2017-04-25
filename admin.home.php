@@ -5,7 +5,7 @@
  * Date: 19/04/2017
  * Time: 16:44
  */
-<?php
+
 include('session.php');
 ?>
 <!DOCTYPE html>
