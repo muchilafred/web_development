@@ -10,7 +10,7 @@ session_start();
 include 'dbconnect.php';
 
 
-if ( isset($_SESSION['user'])!="" ) {
+if ( isset($_SESSION['user']) ) {
     header("Location: session.php");
     exit;
 }
