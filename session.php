@@ -5,6 +5,12 @@
  * Date: 11/04/2017
  * Time: 17:23
  */
+session_start();
+if (!isset($_SESSION['user'])) {
+    header("location: index.php");
+} else if (isset($_SESSION['user'])!="") {
+    header("location: session.php");
+}
 ?>
 
 
