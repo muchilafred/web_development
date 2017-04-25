@@ -81,7 +81,7 @@ if ( isset($_POST['btn-signup']) ) {
         unset($pass);
     }     else {
         $errTyp = "Trouble";
-        $errMSG = "issues, under going sorting, try again in a bit";
+        $errMSG = "Unable to Register to System";
     }
 }
 ?>

@@ -25,7 +25,7 @@
     <li><a href="group3.php">Data Computing</li>
 </ul>
 
-
+<a href="index.php">Main page</a>
 <a href="logout.php">Logout</a>
 
 
