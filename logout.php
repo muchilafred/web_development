@@ -5,12 +5,6 @@
  * Date: 11/04/2017
  * Time: 17:24
  */
-session_start();
-if (!isset($_SESSION['user'])) {
-    header("location: index.php");
-} else if (isset($_SESSION['user'])!="") {
-    header("location: session.php");
-}
 
 if (isset($_GET['logout'])) {
     unset($_SESSION['user']);
