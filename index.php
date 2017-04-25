@@ -11,7 +11,7 @@ include 'dbconnect.php';
 
 
 if ( isset($_SESSION['user'])!="" ) {
-    header("Location: session.php");
+    header("refresh:0");
     exit;
 }
 
