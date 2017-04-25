@@ -5,7 +5,10 @@
  * Date: 11/04/2017
  * Time: 17:23
  */
+ob_start();
 session_start();
+require_once 'dbconnect.php';
+
 if (!isset($_SESSION['user'])) {
     header("location: index.php");
     exit;
